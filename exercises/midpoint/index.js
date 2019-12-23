@@ -15,7 +15,7 @@
 function midpoint(list) {
     let pointer1 = list.getFirst();
     let pointer2 = list.getFirst();
-    while (pointer2.next !== null && pointer2.next.next !== null) {
+    while (pointer2.next && pointer2.next.next) {
         pointer1 = pointer1.next;
         pointer2 = pointer2.next.next;
     }

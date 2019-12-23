@@ -12,6 +12,17 @@
 //   c.next = b;
 //   circular(l) // true
 
-function circular(list) {}
+function circular(list) {
+    a = list.getFirst();
+    b = list.getFirst();
+    while (b.next) {
+        a = a.next;
+        b = b.next.next;
+        if (a === b) {
+            return true;
+        }
+    }
+    return false;
+}
 
 module.exports = circular;
