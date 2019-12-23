@@ -29,7 +29,6 @@ describe('Node', () => {
   });
 });
 
-describe.skip('Tree', () => {
   test('starts empty', () => {
     const t = new Tree();
     expect(t.root).toEqual(null);
@@ -64,4 +63,3 @@ describe.skip('Tree', () => {
 
     expect(letters).toEqual(['a', 'b', 'c', 'd']);
   });
-});
