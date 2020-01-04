@@ -22,9 +22,6 @@ function validate(node, min = null, max = null) {
         return false;
     }
     return true;
-
-    Array.shift()
-    Array.push()
 }
 
 module.exports = validate;
